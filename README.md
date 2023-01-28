@@ -1,4 +1,4 @@
-# Mistic_code_live_cell_imaging: image tSNE visualizer
+# Mistic for Live cell image t-SNE rendering
 
 This is a Python tool using the Bokeh library to view multiple multiplex images simultaneously. The code has been tested on 7-panel Vectra TIFF, 32- & 64-panel CODEX TIFF, 16-panel CODEX QPTIFF, 4-panel CyCIF TIFF, and 44-panel t-CyCIF TIFF images.
 
