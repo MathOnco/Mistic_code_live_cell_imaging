@@ -49,8 +49,8 @@ Figure description: A sample Mistic GUI with user inputs is shown. **A.** User-i
   * ```Mistic_code/code/user_inputs```
   * Use the /figures folder to upload the live cell .png images
     * Images for ```FoFX001003_221018_brightfield``` and ```FoFX002005_221018_brightfield``` can be found in the 'live-cell-imaging-data' folder
-  * Use the /metadata folder to upload metadata for these image:
-    * For this, navigate to the ```Mistic_code_live_cell_imaging/code/user_inputs/live-cell-imaging-data/```, choose the data of choice, move the two metadata files (Cluster_categories.csv and X_imagetSNE.csv) to 
+  * Use the /metadata folder to upload metadata for these images:
+    * For this, navigate to the ```Mistic_code_live_cell_imaging/code/user_inputs/live-cell-imaging-data/```, choose the data of choice, move the two metadata files (Cluster_categories.csv and X_imagetSNE.csv) to ```Mistic_code/code/user_inputs/metadata/```
     * Retain the Markers_ids.csv and markers.csv, as is
 
 
@@ -61,7 +61,7 @@ Figure description: A sample Mistic GUI with user inputs is shown. **A.** User-i
   * ```bash mistic.sh```
   * This runs a bokeh server locally and will automatically open the interactive dashboard in your browser at http://localhost:5098/image_tSNE_GUI
   * On the interactive dashboard: choose the options as shown below and click ```Run```.
-  * <img src=/fig_readme/Figure_2.jpg width="80%"></img>
+  * <img src=/fig_readme/live_cell_options.png width="80%"></img>
   * 
   * any one of the markers, nter the imaging format, montage or multiplexed views and other user options on the GUI and click ```Run```.
 
