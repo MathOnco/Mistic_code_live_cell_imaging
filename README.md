@@ -43,12 +43,12 @@ Figure description: A sample Mistic GUI with user inputs is shown. **A.** User-i
 
 * Download this code repository or Open Terminal and use `git clone`
 
-  `$ git clone https://github.com/MathOnco/Mistic.git`
+  `$ git clone https://github.com/MathOnco/Mistic_for_live_cell_imaging.git`
  
 * In the Mistic folder, navigate to /user_inputs folder to upload input files:
-  * ```Mistic_code/code/user_inputs/```
-  * Use the /figures folder to upload the multiplexed images
-    * Example NSCLC Vectra dataset is available at: https://doi.org/10.5281/zenodo.6131933 
+  * ```Mistic_code/code/user_inputs```
+  * Use the /figures folder to upload the live cell .png images
+    * Images for ```FoFX001003_221018_brightfield``` and ```FoFX002005_221018_brightfield``` can be found in the 'live-cell-imaging-data' folder
   * Use the /metadata folder to 
     * Upload the imaging markers of interest as Markers_ids.csv and markers.csv. 
        * Example files are provided in the subfolders: Vectra, CyCIF, t-CyCIF and CODEX 
