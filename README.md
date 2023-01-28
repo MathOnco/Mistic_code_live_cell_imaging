@@ -61,7 +61,7 @@ Figure description: A sample Mistic GUI with user inputs is shown. **A.** User-i
   * ```bash mistic.sh```
   * This runs a bokeh server locally and will automatically open the interactive dashboard in your browser at http://localhost:5098/image_tSNE_GUI
   * On the interactive dashboard: choose the options as shown below and click ```Run```.
-  <img src=/fig_readme/live_cell_options.png width="20%"></img>
+  *  <img src=/fig_readme/live_cell_options.png width="20%"></img>
 
 
 
