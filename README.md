@@ -49,35 +49,22 @@ Figure description: A sample Mistic GUI with user inputs is shown. **A.** User-i
   * ```Mistic_code/code/user_inputs```
   * Use the /figures folder to upload the live cell .png images
     * Images for ```FoFX001003_221018_brightfield``` and ```FoFX002005_221018_brightfield``` can be found in the 'live-cell-imaging-data' folder
-  * Use the /metadata folder to 
-    * Upload the imaging markers of interest as Markers_ids.csv and markers.csv. 
-       * Example files are provided in the subfolders: Vectra, CyCIF, t-CyCIF and CODEX 
-       * Move the files from the relevant subfolder into the /metadata folder
-       * Note: For the Stack Montage option, only the markers.csv file is required
-    * Optional uploads:
-      * Upload image tSNE co-ordinates as X_imagetSNE.csv
-        * If no user-generated tSNE co-ordinates are provided, Mistic will generate a set of t-SNE coordinates to render the images
-      * Upload image metadata such as 
-        * Cluster labels as Cluster_categories.csv
-          * If cluster labels are not provided, Mistic will cluster the images using a Bayesian mixture model. 
-        * Patient_ids as Patient_ids.csv
-        * Treatments as Treatment_catgories.csv
-        * Patient response as Response_categories.csv 
-        * If any of these are unavailable, Mistic will use either the randomly-generated or user-provided tSNE points without any color coding i.e. dots are colored in gray.
-        * Sample metadata files are provided for reference in separate subfolders for each imaging technique (Vectra, CyCIF, t-CyCIF and CODEX) in the /metadata folder
-        * If using the sample metadata, move the files from the relevant subfolder into the /metadata folder
+  * Use the /metadata folder to upload metadata for these image:
+    * For this, navigate to the ```Mistic_code_live_cell_imaging/code/user_inputs/live-cell-imaging-data/```, choose the data of choice, move the two metadata files (Cluster_categories.csv and X_imagetSNE.csv) to 
+    * Retain the Markers_ids.csv and markers.csv, as is
+
+
 
 ## Run Mistic
   
 * Open a command prompt (or the Terminal application), change to the directory containing /code and type:
   * ```bash mistic.sh```
   * This runs a bokeh server locally and will automatically open the interactive dashboard in your browser at http://localhost:5098/image_tSNE_GUI
-  * Enter the imaging format, montage or multiplexed views and other user options on the GUI and click ```Run```.
+  * On the interactive dashboard: choose the options as shown below and click ```Run```.
+  * <img src=/fig_readme/Figure_2.jpg width="80%"></img>
+  * 
+  * any one of the markers, nter the imaging format, montage or multiplexed views and other user options on the GUI and click ```Run```.
 
-* Examples for running Mistic:
-  * For instructions on how to run Mistic on the t-CyCIF data, please check: https://mistic-rtd.readthedocs.io/en/latest/vignette_example_tcycif.html
-
-  * For instructions on how to run Mistic on the toy data from our NSCLC Vectra FoVs, please check:https://mistic-rtd.readthedocs.io/en/latest/vignette_example_vectra.html
 
 
 * If you get an error: ```Cannot start Bokeh server, port 5098 is already in use```, then at the Terminal, issue: 
